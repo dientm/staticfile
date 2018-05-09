@@ -15,7 +15,7 @@ function callback(data) {
         }
         vecs[data[i][0]] = vec;
     }
-    d3.json("../../polls/load_config?file_name=word_selections.json", callback1);
+    d3.json("../../../polls/load_config?file_name=word_selections.json", callback1);
 }
 
 // d3.json("https://github.com/doannam020293/word2viz-master/blob/master/word_selections.json",callback1);
