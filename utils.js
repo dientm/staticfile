@@ -67,7 +67,7 @@ function getWithAxes(vecs, words, a, b)
 
 function getvector(word) {
 	var data   ;
-	var url = "../../polls/vector_one_word?vector_one_word=" + word;
+	var url = "../../../polls/vector_one_word?vector_one_word=" + word;
 	// d3.json(url, function(ds) {
 	// 	data = ds;
 	// });
