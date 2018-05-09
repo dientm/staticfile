@@ -15,7 +15,7 @@ function callback(data) {
         }
         vecs[data[i][0]] = vec;
     }
-    d3.json("../../../polls/load_config?file_name=word_selections.json", callback1);
+    d3.json("https://103.21.149.18/wordvisualize/polls/load_config?file_name=word_selections.json", callback1);
 }
 
 // d3.json("https://github.com/doannam020293/word2viz-master/blob/master/word_selections.json",callback1);
@@ -71,7 +71,7 @@ function callback1(errors, rawData) {
         .addEventListener("keyup", function (event) {
             event.preventDefault();
             $.ajax({
-                url: "../../polls/search",
+                url: "https://103.21.149.18/wordvisualize/polls/search",
                 cache: false,
                 type: "GET",
                 data: ({"auto_complete": $("#addWordInput").val()}),
@@ -102,7 +102,7 @@ function callback1(errors, rawData) {
         .addEventListener("keyup", function (event) {
             event.preventDefault();
             $.ajax({
-                url: "../../polls/search",
+                url: "https://103.21.149.18/wordvisualize/polls/search",
                 cache: false,
                 type: "GET",
                 data: ({"auto_complete": $("#addPairInput1").val()}),
@@ -122,7 +122,7 @@ function callback1(errors, rawData) {
         .addEventListener("keyup", function (event) {
             event.preventDefault();
             $.ajax({
-                url: "../../polls/search",
+                url: "https://103.21.149.18/wordvisualize/polls/search",
                 cache: false,
                 type: "GET",
                 data: ({"auto_complete": $("#addPairInput2").val()}),
