@@ -1,6 +1,6 @@
 "use strict";
 
-d3.csv("https://raw.githubusercontent.com/doannam020293/word2viz-master/master/df_test_vector.csv", callback);
+d3.csv("https://cdn.rawgit.com/doannam020293/word2viz-master/master/df_test_vector.csv", callback);
 
 var vecs = {};
 
